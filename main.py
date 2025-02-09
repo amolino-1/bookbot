@@ -27,10 +27,54 @@ def char_count(book):
 
     return my_dict
 
+def print_report(book):
+
+    book_chars = char_count(book)
+
+    alphabet = [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+    ]
+
+    print(f"--- Begin report of books/frankenstein.txt ---")
+
+    for char in book_chars:
+        if char in alphabet:
+            print(f"The '{char}' character was found {book_chars[char]} times")
+
+    print("--- End report---")
+
+
+
 
 def main():
-    print(word_count(book))
-    print(char_count(book))
+    # print(word_count(book))
+    # print(char_count(book))
+    print_report(book)
 
 if __name__ == "__main__":
     main()
