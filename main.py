@@ -1,6 +1,7 @@
-def main():
-    with open("books/frankenstein.txt") as f:
-        file_contents = f.read()
+with open("books/frankenstein.txt") as f:
+    file_contents = f.read()
+
+def word_count():
 
         # Initalise word counter
         word_count = 0
@@ -12,6 +13,10 @@ def main():
             word_count += 1
 
         print(word_count)
+
+def main():
+    word_count(file_contents)
+
 
 if __name__ == "__main__":
     main()
