@@ -12,7 +12,7 @@ def word_count(book):
         for word in words:
             word_count += 1
 
-        print(word_count)
+        return print(word_count)
 
 def char_count(book):
     my_dict = {}
@@ -25,7 +25,7 @@ def char_count(book):
     for word in words:
         my_dict[word] += 1
 
-    print(my_dict)
+    return print(my_dict)
 
 
 def main():
